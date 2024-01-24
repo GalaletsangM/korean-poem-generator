@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Poem Generator</title>
   </head>
@@ -11,21 +12,19 @@
       <header>
         <h1>AI Korean Poem Generator</h1>
       </header>
-      <form action="">
-        <input
-          type="text"
-          placeholder="Enter the topic of the korean poem "
-          class="instructions"
-          autofocus
-          required
-        />
-        <input type="submit" class="submit-button" />
-      </form>
-      <div class="poem">
-        The poem will be here
-        <br />
-        the poem continues
-      </div>
+      <main>
+        <form action="" id="poem-generator-form">
+          <input
+            type="text"
+            placeholder="Enter the topic of the korean poem "
+            class="instructions"
+            autofocus
+            required
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem" id="poem"></div>
+      </main>
 
       <footer>
         This AI project was coded by Galaletsang Precious Mafoko and is opend
